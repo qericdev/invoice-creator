@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css"/>
+
+    </head>
+    <body>
+        <div class="body-title">
+            <h1>Invoice Creator</h1>
+            <p>Thanks for Choosing GoodCorp, LLC!</p>
+        </div>
+        <div class="body-body">
+            <div class="services">
+                <button onclick="addServiceWash()">Wash Car: $10</button>
+                <button onclick="addServiceMow()">Mow Lawn: $20</button>
+                <button onclick="addServicePull()">Pull Weeds: $30</button>
+            </div>
+            <div class="tasks">
+                <p>TASK</p>
+                <p>TOTAL</p>
+
+            </div>
+            <div id="chosenServices"></div>
+            <hr>
+            <div class="total">
+                <p>NOTES</p>
+                <p>TOTAL AMOUNT</p>
+            </div>
+          
+            <div class="totalValue">
+                <div id="waysToPay" class="waysToPay"></div>
+                <div>
+                $<span id="totalSumValue">0</span>
+                </div>
+            </div>
+            <button onclick="restart()" class="send"> <img src="./img/mail.png"/>Send Invoice</button>
+
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
